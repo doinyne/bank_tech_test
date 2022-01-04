@@ -18,6 +18,8 @@ class Bank
     @statement << { date: Date.today, balance: @balance }
   end
 
+
+  # need to work out how to use credit and debit 
   def statement
     puts 'date || credit || debit || balance ||'
     @statement.reverse.each { |transaction| puts "#{transaction[:date]} || #{transaction[:credit]} || #{transaction[:debit]} || #{transaction[:balance]}" }
