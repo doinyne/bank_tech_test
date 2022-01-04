@@ -40,5 +40,17 @@ I would like to be able make a statement
 So I can see the activity on my account
 ```
 
+## to set up a new bank account 
+
+```
+irb
+```
+```
+require './lib/bank.rb'
+```
+```
+account = Bank.new
+```
+
 Self assessment form
 https://docs.google.com/forms/d/1Q-NnqVObbGLDHxlvbUfeAC7yBCf3eCjTmz6GOqC9Aeo/viewform?edit_requested=true
