@@ -15,4 +15,7 @@ class Bank
     @balance -= amount
   end
 
+  def statement
+    @balance
+  end
 end

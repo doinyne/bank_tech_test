@@ -21,4 +21,11 @@ describe Bank do
       expect { account.withdraw(10) }.to change { account.balance }.by -10
     end
   end
+
+  describe '#balance' do  
+    it { is_expected.to respond_to(:balance) }
+    it 'will return the balance of the account' do
+      expect(account.balance).to eq 0
+    end
+  end
 end
