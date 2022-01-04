@@ -19,7 +19,7 @@ class Bank
   end
 
   def statement
-    puts 'date || balance'
-    @statement.reverse.each { |transaction| puts "#{transaction[:date]} || #{transaction[:balance]}" }
+    puts 'date || credit || debit || balance ||'
+    @statement.reverse.each { |transaction| puts "#{transaction[:date]} || #{transaction[:credit]} || #{transaction[:debit]} || #{transaction[:balance]}" }
   end
 end

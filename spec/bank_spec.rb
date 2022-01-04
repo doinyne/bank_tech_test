@@ -28,4 +28,11 @@ describe Bank do
       expect(account.balance).to eq 0
     end
   end
+  
+  describe '#statement' do  
+    it { is_expected.to respond_to(:statement) }
+    it 'will show you a statement of transactions' do
+      expect(account.statement).to eq []
+    end
+  end 
 end
