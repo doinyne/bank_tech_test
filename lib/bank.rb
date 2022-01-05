@@ -22,16 +22,20 @@ class Bank
   end
 
   # need to work out how to use credit and debit
+  # {transaction[:credit]} || #{transaction[:debit]} ||
+  # credit || debit ||
   def statement
-    puts 'date || credit || debit || balance ||'
+    puts 'date || balance ||'
     @statement.reverse.each do |transaction|
-      puts "#{transaction[:date]} || #{transaction[:credit]} || #{transaction[:debit]} || #{transaction[:balance]}"
+      puts "#{transaction[:date]} ||  #{transaction[:balance]}"
     end
   end
 
+  def overdraft_exceeded?(amount)
+    @balance - amount < MINIMUM_BALANCE
+  end 
+
   private 
 
-  def overdraft_exceeded?(amount) 
-    @balance + amount <= MINIMUM_BALANCE
-  end 
+
 end
