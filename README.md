@@ -1,6 +1,30 @@
 # bank_tech_test
 
+Hello, I decided to use Ruby for this tech test. 
+
+My bank is very generous and offers a £200 overdraft.
+
+## to set up a new bank account 
+
+```
+irb
+
+require './lib/bank.rb'
+
+account = Bank.new
+```
+``` 
+account.deposit(#integer) = to deposit cash
+account.withdraw(#integer) = to withdraw cash
+account.statement = printed statement with date stamp
+account.balance = to view current balance of account 
+```
+
 ## Specification
+
+clone repo
+
+run bundle install
 
 ### Requirements
 
@@ -38,18 +62,6 @@ So I can use it
 As a User
 I would like to be able make a statement 
 So I can see the activity on my account
-```
-
-## to set up a new bank account 
-
-```
-irb
-```
-```
-require './lib/bank.rb'
-```
-```
-account = Bank.new
 ```
 
 Self assessment form
