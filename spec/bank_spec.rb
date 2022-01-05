@@ -34,7 +34,10 @@ describe Bank do
   describe '#statement' do
     it { is_expected.to respond_to(:statement) }
     it 'will show you a statement of transactions' do
-      expect(account.statement).to eq []
+      account = Bank.new
+      account.deposit(10)
+      account.withdraw(5)
+      expect(account.statement).to eq [{:withdraw=>5, :date=>Date.today, :balance=>5}, {:deposit=>10, :date=>Date.today, :balance=>10}]
     end
   end
 end
