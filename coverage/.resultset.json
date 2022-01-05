@@ -1,0 +1,83 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/deanlewis/makers/bank_tech_test/spec/bank_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          5,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          1,
+          4,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          1,
+          4,
+          null,
+          null,
+          null,
+          1,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/deanlewis/makers/bank_tech_test/lib/bank.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          9,
+          9,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1641384990
+  }
+}
