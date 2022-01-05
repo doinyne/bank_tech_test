@@ -4,6 +4,9 @@ Hello, I decided to use Ruby for this tech test.
 
 My bank is very generous and offers a £200 overdraft.
 
+With extra time I would have created a webhelper file and created methods for testing my account.
+This would have made my test file cleaner and easier to read.
+
 ## to set up a new bank account 
 
 ```
