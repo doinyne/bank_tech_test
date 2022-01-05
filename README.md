@@ -48,6 +48,11 @@ date || credit || debit || balance
 10/01/2023 || 1000.00 || || 1000.00
 ```
 
+## How the bank account works
+
+![Screenshot 2022-01-05 at 17 02 51](https://user-images.githubusercontent.com/68062425/148258461-b9709518-766d-4072-b798-62e198c64911.png)
+
+
 ## User Stories 
 
 ``` 
