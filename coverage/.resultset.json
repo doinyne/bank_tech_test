@@ -45,15 +45,19 @@
           1,
           null,
           null,
+          null,
           null
         ]
       },
       "/Users/deanlewis/makers/bank_tech_test/lib/bank.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
           1,
+          null,
           1,
           null,
           1,
@@ -68,6 +72,7 @@
           null,
           1,
           2,
+          null,
           2,
           2,
           null,
@@ -86,6 +91,6 @@
         ]
       }
     },
-    "timestamp": 1641401569
+    "timestamp": 1641403350
   }
 }
