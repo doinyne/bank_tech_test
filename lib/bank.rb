@@ -31,6 +31,8 @@ class Bank
     end
   end
 
+private
+
   def overdraft_exceeded?(amount)
     @balance - amount < MINIMUM_BALANCE
   end
