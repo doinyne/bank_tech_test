@@ -3,7 +3,7 @@
 require 'date'
 
 class Bank
-  attr_reader :balance, :statment
+  attr_reader :balance
 
   MINIMUM_BALANCE = -200
 
@@ -14,20 +14,20 @@ class Bank
 
   def deposit(amount)
     @balance += amount
-    @statement << { date: Date.today, deposit: amount, balance: @balance }
+    @statement << { date: Date.today, credit: amount, balance: @balance }
   end
 
   def withdraw(amount)
     raise 'The overdraft limit has been exceeded' if overdraft_exceeded?(amount)
 
     @balance -= amount
-    @statement << { date: Date.today, withdraw: amount, balance: @balance }
+    @statement << { date: Date.today, debit: amount, balance: @balance }
   end
 
   def statement
-    puts 'date || deposited || withdrawn || balance'
+    puts 'date || credit || debit || balance'
     @statement.reverse.each do |transaction|
-      puts "#{transaction[:date]} || #{transaction[:deposit]} || #{transaction[:withdraw]} || #{transaction[:balance]}"
+      puts "#{transaction[:date]} || #{transaction[:credit]} || #{transaction[:debit]} || #{transaction[:balance]}"
     end
   end
 
